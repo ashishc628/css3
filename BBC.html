@@ -1,0 +1,515 @@
+<html>
+
+<head>
+    
+    <title>BBC Clone</title>
+    </head>
+
+    <style type="text/css" >
+    
+        #topbar{
+            
+            
+            
+            width: 1000px;
+            margin: 0 auto;
+            
+            height: 40px;
+             
+        }
+        
+        
+        body{
+            
+            margin: 0px;
+            padding: 0px;
+            font-family: Helvetica , Arial , sans-serif;
+        }
+        
+        #logo{
+            
+            margin-top: 8px;
+            width: 100px;
+            float: left;
+            margin-right: 8px;
+        }
+        
+        .topbar-section{
+            float: left;
+            border-left: 1px #CCCCCC solid;
+            height: 100%;
+        }
+        
+        #signimg{
+            
+            width: 30px;
+            margin: 11px 15px ;
+            float: left;
+            
+        }
+        #signin-text{
+            
+            font-weight: bold;
+            font-size: 90%;
+           position: relative;
+            top: 16px;
+            right: 5px;
+        }
+        
+        .topbar-menu{
+            
+            font-weight: bold;
+            font-size: 90%;
+            padding: 14px 15px 0px 15px;
+            height: 30px;
+            
+        }
+        
+        #searchbox{
+            
+            background-color: #A9A9A9;
+            border: none;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 5px;
+            margin: 5px 0px 5px 5px;
+            float: left;
+        }
+    
+        #mag{
+            
+            height: 27px;
+            margin-top: 5px;
+            
+        }
+        
+        .clear{
+            clear: both;
+        }
+        
+        
+        
+        #menubar{
+            border-top: 1px solid #CCCCCC;
+            background-color: #BB1919;
+            width: 100%;
+            height: 70px;
+            
+        }
+        
+        #menu{
+            
+            width: 1000px;
+            margin: auto;
+        }
+        
+        
+        h1{
+            
+            padding: 0;
+            margin: 0;
+            color: white;
+            font-size: 40px;
+            font-weight: normal;
+            padding-top: 10px;
+            float: left;
+        }
+        
+        #menubar2{
+            background-color: #A91717;
+            width: 100%;
+        }
+        #menu2{
+            
+            width: 1000px;
+            margin: 0 auto;
+            height: 40px;
+        }
+        
+        #menu2 a{
+            
+            color: white;
+            text-decoration: none;
+             
+            padding: 0px 10px ;
+            border-right: 1px solid #BB4545;
+            font-size: 14px;
+            position: relative;
+            top: 10px;
+        }
+        
+        #menu2 a:hover{
+            
+            text-decoration: underline;
+            
+        }
+        
+        .noborder{
+            
+            border: none !important ;
+        }
+        
+        
+        #pagecontainer{
+            
+            width: 1000px;
+            margin: 0 auto;
+            
+            
+        }
+        
+        h2{
+            
+            font-weight: normal;
+            margin-top: 40px;
+            font-size: 20px;
+            border-bottom: 2px solid #a91717;
+            width: 105px;
+            
+        }
+        
+        
+        h3 a{
+            
+            color: black;
+            font-size: 30px;
+            text-decoration: none;
+            
+        }
+        
+        h3 a:hover{
+            color: #1167a8;
+        }
+        
+        #articlesummary{
+            
+            
+            color: #5a5a5a;
+            width: 240px;
+            float: left;
+        }
+        
+        .clock{
+            
+            height: 16px;
+            position: relative;
+            top: 2px;
+        }
+        
+        #articlesummary a{
+            text-decoration: none;
+            color: #a91717;
+             
+        }
+        
+        
+         #articlesummary a:hover{
+            color: #1167a8;
+        }
+        
+        
+        #articlecontainer{
+            
+            float: left;
+            width: 670px;
+            border-right: 1px solid #CCCCCC;
+            padding: 20px;
+        }
+        
+        #mainarticleimage{
+            
+            width: 360px;
+            margin-left: 0px;
+        }
+        
+        
+        #articlear{
+            
+            border-top: 1px solid #a91717;
+            width: 50px;
+        }
+        
+        
+        #watchlisten{
+            
+            margin-left: 20px;
+            width: 260px;
+            float: right;
+            
+        }
+        
+        h4{
+            
+            font-weight: normal;
+            font-size: 20px;
+        }
+        
+        .articlesideimage{
+            float: left;
+            width: 90px;
+            margin-right: 10px;
+        }
+        
+        .watch-listen-link{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+            
+        }
+        
+         .watch-listen-link:hover{
+            color: #1167a8;
+        }
+        
+        
+        .sidearticle{
+            float: right;
+            width: 160px;
+            position: relative;
+            top: -19px;
+        }
+       
+ 
+ 
+    </style>
+    
+    
+    <body>
+    
+    <div id="topbar" >
+        
+        <img id="logo" src="bbclogo.png">
+        
+        <div id="signin-div" class="topbar-section" >
+            
+            <img id="signimg"  src="signinimg.png">
+            
+            <span id="signin-text" >Sign In</span>
+        
+        
+        </div>
+        
+        
+        
+        <div class="topbar-section topbar-menu" >
+        
+        
+        News
+        
+        </div>
+        
+        
+        <div class="topbar-section topbar-menu" >
+        
+        
+        Sport
+        
+        </div>
+        
+        
+        <div class="topbar-section topbar-menu" >
+        
+        
+        Weather
+        
+        </div>
+        
+        
+        <div class="topbar-section topbar-menu" >
+        
+        
+        Iplayer
+        
+        </div>
+        
+        
+        <div class="topbar-section topbar-menu" >
+        
+        
+        TV
+        
+        </div>
+        
+         <div class="topbar-section topbar-menu" >
+        
+        
+        More
+        
+        </div>
+        
+        <div class="topbar-section">
+        
+        
+        <input id="searchbox" type="text" placeholder="search" >
+            
+            <input type="image" id="mag" src="mag.png">
+        
+        </div>
+        
+        
+        
+        
+        </div>
+    
+        
+        <div class="clear" ></div>
+    
+    
+        <div id="menubar">
+        
+        <div id="menu">
+            
+            <h1>NEWS</h1>
+            
+           
+            
+            </div>
+        
+            
+            <div class="clear"></div>
+            
+            
+            <div id="menubar2">
+            
+            
+            <div id="menu2">
+                
+                <a href="">Home</a>
+                
+                <a href="">UK</a>
+                
+                                <a href="">World</a>
+                
+                                <a href="">Buisness</a>
+                
+                
+                                <a href="">Politics</a>
+                
+                                <a href="">Tech</a>
+                
+                                <a href="">Science</a>
+                
+                
+                <a href="">Health</a>
+                
+                <a href="">Education</a>
+                
+                <a href="">Entertainment & Arts </a>
+                
+                <a href="">Video and Audio</a>
+                
+                <a href="" class="noborder" >More</a>
+                
+                
+                </div>
+            
+            
+            
+            </div>
+        
+        </div>
+        
+        <div class="clear"></div>
+        
+        
+             <div id="pagecontainer">
+        
+        
+        <div id="main">
+        
+        <h2>Technology</h2>
+            
+            <div id="articlecontainer">
+   
+          <h3><a  href="">Facebook finds Independence document 'racist'</a> </h3>  
+            
+            <div id="articlesummary">
+            
+          <p> Algorithims that seek out hate speech on Facebook remove parts of the Declaration of independence. </p>
+                
+                
+            <p><img class="clock"  src="clock.png" >6 July 2018 | <a href="">Technology</a> </p>
+                
+                <hr id="articlehr" align="left" >
+                
+             <p>  <a href="">'Hate speech button' fazes Facebook users </a>  </p> 
+ <p>  <a href="">     Facebook divulges scale of abuse on site  </a>  </p> 
+            
+            </div>
+            
+                <img id="mainarticleimage" src="fb.png">
+                
+                
+            </div>
+            
+            </div>
+        
+                  
+                 
+                <div id="watchlisten">
+                    
+                    
+                 
+                 <h4>Watch/Listen</h4>
+                    
+                    <img class="articlesideimage"  src="article1.png">
+                    
+                <div class="sidearticle"> 
+                    
+                    
+                 <p>    <a class="watch-listen-link" href="">
+How to hide your Gmails from prying eyes</a> </p>    
+                    
+                    
+               <p><img class="clock" src="clock.png" >6 July 2018 | <a href="">Technology</a> </p>
+                    
+                   
+                 
+                    </div>   
+                    
+                    
+                    <div class="clear"></div>
+                    
+                          <img class="articlesideimage"  src="article2.png">
+                    
+                <div class="sidearticle"> 
+                    
+                    
+                 <p>    <a class="watch-listen-link" href="">
+England footballer tries out VR</a> </p>    
+                    
+                    
+               <p><img class="clock" src="clock.png" >6 July 2018 | <a href="">Technology</a> </p>
+                    
+                   
+                 
+                    </div>  
+                    
+                    
+                      <div class="clear"></div>
+                    
+                      <img class="articlesideimage"  src="article3.png">
+                    
+                <div class="sidearticle"> 
+                    
+                    
+                 <p>    <a class="watch-listen-link" href="">
+ 
+ 
+Defence secretary interrupted by Siri</a> </p>    
+                    
+                    
+               <p><img class="clock" src="clock.png" >6 July 2018 | <a href="">Technology</a> </p>
+                    
+                 </div> 
+                 
+                 </div>
+                 
+        </div>
+        
+    </body>
+    
+    
+    
+</html>
